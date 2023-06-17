@@ -1,22 +1,22 @@
-import ChatPage from "@/components/ChatPage";
-import { randomUUID } from "crypto";
+import ChatPage from '@/components/ChatPage'
+import { randomUUID } from 'crypto'
 
 const chats = [
   {
     id: randomUUID(),
-    picture: "https://randomuser.me/api/portraits/med/men/75.jpg",
+    picture: 'https://randomuser.me/api/portraits/med/men/75.jpg',
     name: {
-      first: "John",
-      last: "Doe",
+      first: 'John',
+      last: 'Doe',
     },
     count: 0,
   },
   {
     id: randomUUID(),
-    picture: "https://randomuser.me/api/portraits/med/men/76.jpg",
+    picture: 'https://randomuser.me/api/portraits/med/men/76.jpg',
     name: {
-      first: "Peter",
-      last: "Parker",
+      first: 'Peter',
+      last: 'Parker',
     },
     count: 4,
   },
@@ -24,13 +24,13 @@ const chats = [
     id: randomUUID(),
     picture: `https://randomuser.me/api/portraits/med/women/65.jpg`,
     name: {
-      first: "Mary",
-      last: "Jane",
+      first: 'Mary',
+      last: 'Jane',
     },
     count: 3,
-    time: "10:00",
+    time: '10:00',
   },
-];
+]
 
 export default function Home() {
   return (
@@ -46,5 +46,5 @@ export default function Home() {
           />
         ))}
     </main>
-  );
+  )
 }
