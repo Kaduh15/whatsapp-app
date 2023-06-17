@@ -34,7 +34,7 @@ const chats = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-full px-3 pt-6 gap-7 ">
+    <main className="flex h-full w-full flex-col gap-7 px-3 pt-6 ">
       {chats &&
         chats.map((user) => (
           <ChatPage
