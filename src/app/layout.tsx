@@ -1,20 +1,18 @@
-import Header from "@/components/Header";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Nav from "@/components/Nav";
+import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
+
+import Header from '@/components/Header'
+import Nav from '@/components/Nav'
+import './globals.css'
 
 export const metadata = {
-  title: "Chats",
-  description: "Todas as conversas do WhatsApp",
-};
+  title: 'Chats',
+  description: 'Todas as conversas do WhatsApp',
+}
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body
@@ -27,5 +25,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }
