@@ -1,6 +1,6 @@
 import { BsEmojiSmileFill } from 'react-icons/bs'
 import { GoPaperclip } from 'react-icons/go'
-import { IoCamera } from 'react-icons/io5'
+import { IoCamera, IoPaperPlane } from 'react-icons/io5'
 
 type ChatIdProps = {
   params: { chatId: string }
@@ -18,6 +18,7 @@ export default async function ChatId({ params }: ChatIdProps) {
         />
         <GoPaperclip className="h-5 w-5" />
         <IoCamera className="h-5 w-5" />
+        <IoPaperPlane className="h-5 w-5" />
       </div>
     </div>
   )
