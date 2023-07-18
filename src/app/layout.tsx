@@ -16,9 +16,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body
-        className={`${inter.className} h-screen items-center justify-center bg-zinc-300 md:flex md:w-screen md:flex-col`}
+        className={`${inter.className} h-screen items-center justify-center bg-gradient-to-r from-green-200 via-green-400 to-green-500 md:flex md:w-screen md:flex-col`}
       >
-        <div className="flex h-full flex-col justify-between bg-white md:aspect-[6/12] md:w-[560px] md:rounded-3xl">
+        <div className="flex h-full flex-col justify-between bg-white shadow-xl md:aspect-[6/12] md:w-[560px] md:rounded-3xl">
           <Header />
           {children}
           <Nav />
