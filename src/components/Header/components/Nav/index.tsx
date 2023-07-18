@@ -11,21 +11,21 @@ export default function Nav() {
       <Link
         href={'/'}
         data-select={pathname === '/'}
-        className="data-[select=true]:border-b-4"
+        className="hover:text- data-[select=true]:border-b-4"
       >
         CHATS
       </Link>
       <Link
         href={'/status'}
         data-select={pathname === '/status'}
-        className="data-[select=true]:border-b-4"
+        className="hover:text- data-[select=true]:border-b-4"
       >
         STATUS
       </Link>
       <Link
         href={'/calls'}
         data-select={pathname === '/calls'}
-        className="data-[select=true]:border-b-4"
+        className="hover:text- data-[select=true]:border-b-4"
       >
         CALLS
       </Link>
